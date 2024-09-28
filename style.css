@@ -92,7 +92,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 60px);
+    height: 100vh; /* Keep it full height */
+    width: 100vw; /* Make it full width */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
     text-align: center;
     background: radial-gradient(circle, rgba(180, 180, 180, 1) 0%, rgba(100, 100, 100, 1) 100%);
     position: relative;
