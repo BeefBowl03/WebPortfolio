@@ -1,16 +1,15 @@
-html {
-    min-height: 100%;
-    overflow: hidden;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   
 }
 
 body {
     color: #333;
-    /* Dark gray for text */
     font-family: "Anonymous Pro", monospace;
     background-color: #f4f4f4;
-    /* Light gray background */
-    margin: 0;
-    /* Reset body margin */
+
 }
 
 /* Navbar Styling */
@@ -20,7 +19,6 @@ body {
     align-items: center;
     padding: 10px 20px;
     background-color: #333;
-    /* Dark gray */
     color: white;
     position: sticky;
     top: 0;
@@ -44,14 +42,12 @@ body {
 .nav-links li a {
     text-decoration: none;
     color: white;
-    /* White text for links */
     padding: 8px 16px;
     transition: background-color 0.3s ease;
 }
 
 .nav-links li a:hover {
     background-color: #555;
-    /* Medium gray for hover */
     border-radius: 5px;
 }
 
@@ -72,26 +68,21 @@ body {
 /* Responsive Navbar */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: none; /* Hide by default */
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 60px; /* Adjust as necessary */
         left: 0;
         background-color: #333;
     }
 
-    .nav-links li {
-        text-align: center;
-        padding: 10px;
-    }
-
     .nav-links.active {
-        display: flex;
+        display: flex; /* Show when active */
     }
 
     .burger-menu {
-        display: flex;
+        display: flex; /* Show hamburger menu */
     }
 }
 
@@ -101,23 +92,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    min-height: 400px;
+    height: calc(100vh - 60px);
     text-align: center;
-    padding: 20px;
     background: radial-gradient(circle, rgba(180, 180, 180, 1) 0%, rgba(100, 100, 100, 1) 100%);
     position: relative;
-    overflow: hidden;
-    margin: 0;
+    z-index: 2;
+    
 }
 
-/* Hero Background Shapes */
+.hero-description {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Floating Shapes Animation */
 .hero::before,
 .hero::after {
     content: '';
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
-    /* Transparent light gray shapes */
     border-radius: 50%;
     z-index: 1;
     animation: floatingShapes 10s ease-in-out infinite;
@@ -129,6 +123,7 @@ body {
     height: 300px;
     top: 20%;
     left: -100px;
+    z-index: -1; 
 }
 
 /* Shape 2 */
@@ -137,107 +132,59 @@ body {
     height: 200px;
     bottom: 15%;
     right: -50px;
+    z-index: -1; 
 }
 
-/* Floating Shapes Animation */
+/* Floating Shapes Keyframes */
 @keyframes floatingShapes {
-
     0%,
     100% {
         transform: translate(0, 0);
     }
-
     50% {
         transform: translate(30px, -30px);
     }
 }
 
-/* Hero Description */
-.hero-description {
-    font-size: 2rem;
-    margin-top: 10px;
-    margin-bottom: 0;
-    color: #555;
-    /* Medium gray for description text */
-}
-
-/* Typing Animation for the Hero Heading */
+/* Typing Animation */
 .text {
     font-size: 5vw;
-    /* Responsive font size based on viewport width */
     font-weight: 700;
     border-right: 0.15em solid orange;
     white-space: nowrap;
-    /* Maintain single line for typing effect */
     overflow: hidden;
     display: inline-block;
-    /* Use inline-block to respect width */
-    max-width: 100%;
-    /* Ensure it fits within the container */
-    animation: typing 4s steps(40, end) 1s forwards,
-        blink-caret 0.75s step-end infinite;
+    max-width: 0;
+    animation: typing 4s steps(40, end) 1s forwards, blink-caret 0.75s step-end infinite;
 }
 
-/* Allow the text to wrap after typing */
-.text-wrapper {
-    overflow: hidden;
-    /* Hide overflow */
-    max-width: 100%;
-    /* Fit within the container */
-    display: flex;
-    /* Enable flexbox for alignment */
-    justify-content: center;
-    /* Center the text */
-}
-
-/* Responsive Text Size for smaller screens */
-@media (max-width: 768px) {
-    .text {
-        font-size: 4vw;
-        /* Smaller font size for medium devices */
-    }
-}
-
-@media (max-width: 480px) {
-    .text {
-        font-size: 3vw;
-        /* Even smaller font size for mobile devices */
-    }
-}
-
-/* Typing animation */
+/* Typing Keyframes */
 @keyframes typing {
     from {
-        width: 0;
+        max-width: 0;
     }
-
     to {
-        width: 100%;
-        /* Full width for wrapping */
+        max-width: 100%; 
     }
 }
 
-/* Blinking cursor effect */
+/* Blinking Cursor */
 @keyframes blink-caret {
-
     from,
     to {
         border-color: transparent;
     }
-
     50% {
         border-color: white;
-        /* White cursor for better contrast */
     }
 }
+
 
 /* Buttons Styling with Reversed Colors */
 .btn,
 .btn2 {
     background: #333;
-    /* Dark gray for better contrast */
     color: white;
-    /* White text for visibility */
     font-family: inherit;
     padding: 0.35em;
     padding-left: 1.2em;
@@ -249,7 +196,6 @@ body {
     display: flex;
     align-items: center;
     box-shadow: inset 0 0 1.6em -0.6em #555555;
-    /* Medium dark shadow */
     overflow: hidden;
     position: relative;
     height: 2.8em;
@@ -260,7 +206,6 @@ body {
 .btn .icon,
 .btn2 .icon2 {
     background: #f0f0f0;
-    /* Light gray icon background for contrast */
     margin-left: 1em;
     position: absolute;
     display: flex;
@@ -284,7 +229,6 @@ body {
     width: 1.1em;
     transition: transform 0.3s;
     color: #888888;
-    /* Gray icon color */
 }
 
 .btn:hover .icon svg,
@@ -306,4 +250,12 @@ body {
     display: flex;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Skills Section */
+
+
