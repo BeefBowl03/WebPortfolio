@@ -29,6 +29,7 @@ body {
     top: 0;
     z-index: 100;
     font-size: 1.5rem;
+
     
 }
 
@@ -40,10 +41,15 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-links li {
     margin-left: 20px;
+    display: flex;
+    align-items: center;
+
 }
 
 .nav-links li a {
@@ -75,11 +81,11 @@ body {
 /* Responsive Navbar */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Hide by default */
+        display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px; /* Adjust as necessary */
+        top: 60px; 
         left: 0;
         background-color: #333;
 
@@ -92,12 +98,12 @@ body {
     }
 
     .nav-links.active {
-        display: flex; /* Show when active */
+        display: flex; 
 
     }
 
     .burger-menu {
-        display: flex; /* Show hamburger menu */
+        display: flex; 
     }
 }
 
@@ -353,4 +359,11 @@ body {
 
 #about-container {
     font-size: 2.8rem;
+    padding-top: 100px;
+}
+
+/* Projects */ 
+
+#projects {
+    font-size: 1.5rem;
 }
