@@ -17,8 +17,8 @@
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#about-container">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-me">Contact</a></li>
         </ul>
         <div class="burger-menu" id="burger-menu">
             <div class="line1"></div>
@@ -98,44 +98,128 @@
 
     <!--Project Section-->
 
-    <div>
-        <div id="projects" class="projects-section">
+    <div class="project-identity">
+        <div id="projects">
 
-            <div class="projects-container">
+            <div id="about-me" class="about-section">
                 <h1>Projects</h1>
                 <p>
                     Here you will find some of the projects I worked on.
                 </p>
             </div>
             <div class="projects-content">
-                <div class="projects-row">
+                <div class="projects-row project1">
                     <div class="projects-row-img">
                         <img src="perfect.jpeg" alt="Perfectly Sustainable">
                     </div>
-                    <div class="projects-row-content"></div>
+                    <div class="projects-row-content">
+                        <h3 class="projects-row-content-title">
+                            Perfectly Sustainable
+                        </h3>
+                        <p class="projects-row-content-desc">
+                            Perfectly Sustainable is a WordPress site focused on promoting eco-friendly products and
+                            sustainable living. It features a minimalist design for easy navigation and a clear emphasis
+                            on environmental consciousness.
+                        </p>
+                        <a class="projects-row-btn" href="https://perfectlysustainable.com/" target="_blank">Visit
+                            Site</a>
+                    </div>
                 </div>
-                <div class="projects-row">
+
+                <div class="projects-row project2">
                     <div class="projects-row-img">
                         <img src="light-glo.jpeg" alt="LightAndGlo">
                     </div>
-                    <div class="projects-row-content"></div>
+                    <div class="projects-row-content">
+                        <h3 class="projects-row-content-title">
+                            Light & Glo
+                        </h3>
+                        <p class="projects-row-content-desc">
+                            Light & Glo Designs is a Shopify site dedicated to selling luxury candles and home
+                            fragrances. It showcases a sleek, modern design with smooth navigation, emphasizing product
+                            details and an elegant shopping experience.
+                        </p>
+                        <a class="projects-row-btn" href="https://www.lightandglodesigns.com.au/" target="_blank">Visit
+                            Site</a>
+                    </div>
                 </div>
-                <div class="projects-row">
+
+                <div class="projects-row project3">
                     <div class="projects-row-img">
                         <img src="chasing.jpeg" alt="Chasing Furries">
                     </div>
-                    <div class="projects-row-content"></div>
-                </div>
-                <div class="projects-row">
-                    <div class="projects-row-img">
-                        <img src="rpg.jpeg" alt="RPG">
+                    <div class="projects-row-content">
+                        <h3 class="projects-row-content-title">
+                            Chasing Furries
+                        </h3>
+                        <p class="projects-row-content-desc">
+                            Chasing Furries is a website designed using VS Code to help report and locate missing pets.
+                            It offers a
+                            simple, user-friendly interface where users can easily submit information about lost pets
+                            and search for them in a streamlined way.
+                        </p>
+                        <a class="projects-row-btn" href="https://chasingfurries.tiiny.site/index.html"
+                            target="_blank">Visit Site</a>
                     </div>
-                    <div class="projects-row-content"></div>
                 </div>
             </div>
+
         </div>
 
 
+    </div>
+
+    <!--Contact Me-->
+    <div id="contact-me">
+        <div class="hero contact-me">
+            <div>
+                <div id="about-me" class="about-section">
+                    <h1>Contact</h1>
+                    <p>
+                        Feel free to Contact me by submitting the form below and I will get back to you as soon as
+                        possible
+                    </p>
+                </div>
+                <div class="contact__form-container">
+                    <form action="#" class="contact__form" method="post"><input type="hidden" name="form-name"
+                            value="form 1">
+                        <div class="contact__form-field">
+                            <label class="contact__form-label" for="name">Name</label>
+                            <input required="" placeholder="Enter Your Name" type="text" class="contact__form-input"
+                                name="name" id="name">
+                        </div>
+                        <div class="contact__form-field">
+                            <label class="contact__form-label" for="email">Email</label>
+                            <input required="" placeholder="Enter Your Email" type="email" class="contact__form-input"
+                                name="email" id="email">
+                        </div>
+                        <div class="contact__form-field">
+                            <label class="contact__form-label" for="message">Message</label>
+                            <textarea required="" cols="30" rows="10" class="contact__form-input"
+                                placeholder="Enter Your Message" name="message" id="message"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <div class="main-button-container">
+                                <div class="button-container2">
+                                    <button class="btn2" href="#">
+                                        Submit
+                                        <div class="icon2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polyline points="9 18 15 12 9 6"></polyline>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
     <!-- Link to JS file for burger menu toggle -->
