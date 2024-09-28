@@ -23,6 +23,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    
 }
 
 .image-logo {
@@ -77,6 +78,11 @@ body {
         background-color: #333;
     }
 
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+    }
+
     .nav-links.active {
         display: flex; /* Show when active */
     }
@@ -92,10 +98,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Keep it full height */
-    width: 100vw; /* Make it full width */
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove any padding */
+    height: 100vh;
     text-align: center;
     background: radial-gradient(circle, rgba(180, 180, 180, 1) 0%, rgba(100, 100, 100, 1) 100%);
     position: relative;
@@ -109,7 +112,7 @@ body {
     color: #555;
 }
 
-/* Floating Shapes Animation */
+/* Floating Shapes Animation 
 .hero::before,
 .hero::after {
     content: '';
@@ -118,27 +121,30 @@ body {
     border-radius: 50%;
     z-index: 1;
     animation: floatingShapes 10s ease-in-out infinite;
+    overflow: hidden;
 }
 
-/* Shape 1 */
+/* Shape 1 
 .hero::before {
     width: 300px;
     height: 300px;
     top: 20%;
     left: -100px;
     z-index: -1; 
+    overflow: hidden;
 }
 
-/* Shape 2 */
+/* Shape 2
 .hero::after {
     width: 200px;
     height: 200px;
     bottom: 15%;
     right: -50px;
     z-index: -1; 
+    overflow: hidden;
 }
 
-/* Floating Shapes Keyframes */
+/* Floating Shapes Keyframes
 @keyframes floatingShapes {
     0%,
     100% {
@@ -147,7 +153,8 @@ body {
     50% {
         transform: translate(30px, -30px);
     }
-}
+} */
+
 
 /* Typing Animation */
 .text {
@@ -253,11 +260,7 @@ body {
     display: flex;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* Skills Section */
 
