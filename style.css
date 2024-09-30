@@ -625,5 +625,14 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding-top: 120px;
+}
+
+#contact-me {
+    padding-top: 100px;
+    background-color: var(--background-color);
+    color: var(--color);
+    padding-bottom: 50px;
+    
 }
 
