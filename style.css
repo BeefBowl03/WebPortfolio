@@ -493,6 +493,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    .projects-row {
+        flex: 1 1 100%;
+    }
+
     .projects-row-content {
         font-size: 1.5rem; 
         padding: 10px;
