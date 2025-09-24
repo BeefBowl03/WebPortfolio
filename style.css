@@ -1,0 +1,643 @@
+:root {
+    --color: white;
+    --background-color: #333; 
+    --aspect-rate: 3/2;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+   
+}
+
+body {
+    color: #333;
+    font-family: "Anonymous Pro", monospace;
+    background-color: #f4f4f4;
+
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-size: 1.5rem;
+
+    
+}
+
+.image-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Burger Menu (Hidden by default) */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: #333;
+
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+        font-size: 2rem;
+    }
+
+    .nav-links.active {
+        display: flex; 
+
+    }
+
+    .burger-menu {
+        display: flex; 
+    }
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: url('hero-background.jpg') no-repeat center center/cover; /* Add background image */
+    position: relative;
+    z-index: 2;
+    color: white; /* Change text color to white */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add gradient overlay */
+    z-index: -1;
+}
+
+.hero-description {
+    font-size: 3rem;
+    margin-top: 10px;
+    color: #ddd; /* Change description color */
+    animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.text-wrapper {
+    animation: slideIn 2s ease-in-out; /* Add slide-in animation */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Typing Animation */
+.text {
+    font-size: 5vw;
+    font-weight: 700;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 0;
+    animation: typing 4s steps(40, end) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Typing Keyframes */
+@keyframes typing {
+    from {
+        max-width: 0;
+    }
+    to {
+        max-width: 100%; 
+    }
+}
+
+/* Blinking Cursor */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+
+/* Buttons Styling with Reversed Colors */
+.btn,
+.btn2 {
+    background: #333;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #555555;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.btn .icon,
+.btn2 .icon2 {
+    background: #f0f0f0;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #888888;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.btn:hover .icon,
+.btn2:hover .icon2 {
+    width: calc(100% - 0.6em);
+}
+
+.btn .icon svg,
+.btn2 .icon2 svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #888888;
+}
+
+.btn:hover .icon svg,
+.btn2:hover .icon2 svg {
+    transform: translateX(0.1em);
+}
+
+.btn:active .icon,
+.btn2:active .icon2 {
+    transform: scale(0.95);
+}
+
+.button-container,
+.button-container2 {
+    padding: 50px;
+}
+
+.main-button-container {
+    display: flex;
+}
+
+
+
+/* Skills Section */
+
+.skills-section {
+    max-width: 1000px; /* Limit width */
+    margin: 0 auto; /* Center container */
+    text-align: left; /* Left-align text */
+    padding: 0; /* Padding inside container */
+    line-height: 1.5;
+    box-sizing: inherit;
+    font-family: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+    font-size: 1.5rem;
+    
+}
+
+.skills-section h1 {
+    font-size: 4.5rem; /* Size of the heading */
+    margin-bottom: 10px; /* Space below heading */
+
+}
+
+.skills-section p {
+    margin: 10px 0; /* Space above and below paragraphs */
+}
+
+.contact-button {
+    display: inline-block; /* Inline block to allow padding */
+    background-color: var(--background-color); /* Background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 10px
+}
+
+#about-me {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    align-content: center;
+    text-align: center; /* Center the text */
+    flex-direction: column; /* Stack the text vertically if there are multiple lines */
+    padding: 20px; /* Optional: Add some padding for spacing */
+    font-size: 2rem;
+}
+
+
+#skills-section {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items */
+    justify-content: center; /* Center items */
+    gap: 5px; /* Space between skills */
+}
+
+.skill {
+    background: #eee; /* Background color for skills */
+    padding: 10px; /* Padding inside skills */
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px; /* Space around each skill */
+}
+
+@media only screen and (max-width: 768px) {
+    .skills-section {
+        grid-template-columns:1fr;
+        grid-gap: 8rem;
+        margin: 20px;
+        font-size: 1.8rem;
+    }
+    #about-container {
+        grid-template-columns:1fr;
+        grid-gap: 8rem;
+        margin: 20px;
+        font-size: 1.8rem;
+    }
+
+}
+
+#about-container {
+    font-size: 2.8rem;
+    padding-top: 100px;
+}
+
+/* Projects */ 
+
+.projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the content */
+    padding: 20px; /* Add padding */
+}
+
+.projects-row {
+    width: 100%; /* Make it responsive */
+    max-width: 750px; /* Maintain a maximum width */
+    aspect-ratio: var(--aspect-rate);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; /* Add some margin for spacing */
+    flex: 1 1 calc(50% - 20px); /* Adjust the width and margin as needed */
+    margin: 10px;
+}
+
+.projects-row-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: var(--aspect-rate); /* Maintain aspect ratio */
+    border-radius: inherit;
+    overflow: hidden; /* Ensure the image is confined */
+}
+
+.projects-row-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.projects-row-img:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.projects-row-img:hover img {
+    filter: grayscale(1) brightness(0.4); /* Image hover effect */
+}
+
+.projects-row-img:hover::after {
+    opacity: 1;
+    inset: 20px; /* Border effect */
+}
+
+/* Hidden content section */
+.projects-row-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the content horizontally and vertically */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background overlay */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+/* Ensure title, description, and button are hidden initially */
+.projects-row-content-title,
+.projects-row-content-desc,
+.projects-row-btn {
+    opacity: 0;
+    transform: translateY(20px); /* Slide-up effect */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Hover effect to reveal content */
+.projects-row:hover .projects-row-content {
+    opacity: 1;
+}
+
+.projects-row:hover .projects-row-content-title,
+.projects-row:hover .projects-row-content-desc,
+.projects-row:hover .projects-row-btn {
+    opacity: 1;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    transform: translateY(0); 
+}
+
+/* Button styling */
+.projects-row-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.projects-row-btn:hover {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .projects-row {
+        flex-direction: column;
+        align-items: center;
+        aspect-ratio: 4/3.2;
+    }
+    
+    .projects-row-content {
+        font-size: 1.5rem; 
+        padding: 15px; 
+        aspect-ratio: 4/3.2;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-row {
+        flex: 1 1 100%;
+    }
+
+    .projects-row-content {
+        font-size: 1.5rem; 
+        padding: 10px;
+        aspect-ratio: 4/3.2;
+    }
+    
+    .projects-row-btn {
+        padding: 8px 16px;
+    }
+}
+
+/* Contact */
+
+#contact {
+    padding: 50px 20px; 
+    background-color: #f4f4f4; 
+}
+
+/* Form Container */
+.contact__form-container {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: white;
+    padding: 4rem;
+    margin-top: 6rem;
+    max-width: 800px; 
+    width: 95%; 
+    border-radius: 5px;
+    margin: 5rem auto; 
+}
+
+/* Form Layout */
+.contact__form {
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* Form Fields */
+.contact__form-field {
+    margin-bottom: 2rem; 
+}
+
+.contact__form-label {
+    color: #666;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 0.5rem; 
+    display: block;
+    text-align: left;
+}
+
+.contact__form-input {
+    color: #333;
+    padding: 1rem; 
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 1.6rem;
+    letter-spacing: 0px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Button */
+.contact__btn {
+    width: auto; 
+    padding: 1rem 2rem; 
+    font-size: 1.6rem;
+    background-color: var(--background-color); 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+.contact__btn:hover {
+    background-color: #555; 
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    .contact__form-container {
+        padding: 1.2rem; 
+    }
+    .contact__form-field {
+        margin-bottom: 1.5rem; 
+    }
+    .contact__form-label {
+        font-size: 1.2rem;
+    }
+    .contact__form-input {
+        font-size: 1.4rem; 
+    }
+    .contact__btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #contact {
+        padding: 30px 10px; 
+    }
+    .contact__form-container {
+        margin: 0.5rem auto; 
+    }
+    .contact__form-label {
+        font-size: 1.1rem; 
+    }
+    .contact__form-input {
+        font-size: 1.2rem; 
+    }
+    .contact__btn {
+        font-size: 1.2rem; 
+        padding: 0.6rem 1.2rem; 
+    }
+}
+
+.form-btn {
+    display: flex; 
+    justify-content: center;
+    margin-top: -1.5rem; 
+    margin-bottom: 2rem; 
+}
+
+.project-identity {
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 120px;
+}
+
+#contact-me {
+    padding-top: 100px;
+    background-color: var(--background-color);
+    color: var(--color);
+    padding-bottom: 50px;
+    
+}
+
