@@ -33,12 +33,24 @@ export function initReveal() {
   }
 
   // Stagger within a group, capped at 6 steps.
+  //
+  // Group by the GRANDPARENT when the element is the only [data-reveal] inside
+  // its own wrapper. Each grid card is `li.card-cell > article[data-reveal]`,
+  // so keying on parentElement gave every one of the ten cards --reveal-i: 0
+  // and they all revealed on the same frame with no cascade at all.
+  const groupKeyOf = (el) => {
+    const parent = el.parentElement;
+    if (!parent) return null;
+    const siblings = parent.querySelectorAll(':scope > [data-reveal]');
+    return siblings.length === 1 && parent.parentElement ? parent.parentElement : parent;
+  };
+
   const groups = new Map();
   for (const el of targets) {
     if (el.style.getPropertyValue('--reveal-i')) continue;
-    const parent = el.parentElement;
-    const n = groups.get(parent) || 0;
-    groups.set(parent, n + 1);
+    const key = groupKeyOf(el);
+    const n = groups.get(key) || 0;
+    groups.set(key, n + 1);
     el.style.setProperty('--reveal-i', String(Math.min(n, 5)));
   }
 

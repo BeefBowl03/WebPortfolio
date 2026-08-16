@@ -192,7 +192,12 @@ const output = build(readJSON(SOURCE));
 
 if (check) {
   const current = existsSync(TARGET) ? readFileSync(TARGET, 'utf8') : '';
-  if (current !== output) {
+  /* Compare line-ending-agnostically. Git checks this file out with CRLF on
+   * Windows (core.autocrlf), while the generator always emits LF — a raw
+   * byte compare therefore fails on every Windows checkout even when the
+   * content is identical, making the drift guard cry wolf and get ignored. */
+  const norm = (s) => s.replace(/\r\n/g, '\n');
+  if (norm(current) !== norm(output)) {
     console.error(
       '[llms.txt] public/llms.txt is out of date with content/copy.json.\n' +
         '           Run: node scripts/generate-llms-txt.mjs'

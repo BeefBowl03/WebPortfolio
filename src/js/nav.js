@@ -175,15 +175,18 @@ function initMobileMenu() {
   trigger.addEventListener('click', () => (open ? closeMenu() : openMenu()));
   if (closeBtn) closeBtn.addEventListener('click', () => closeMenu());
 
-  // Clicking a link closes the panel first, then lets the hash navigation run.
+  // Clicking a link closes the panel first, then lets the navigation run.
   panel.addEventListener('click', (e) => {
     const link = e.target.closest('a[href]');
     if (!link) return;
-    if (link.getAttribute('href').startsWith('#')) {
-      closeMenu({ restoreFocus: false });
-    } else {
-      closeMenu({ restoreFocus: false });
-    }
+
+    // In-page links move focus themselves via the fragment, so dropping focus
+    // is correct there. External links (GitHub / LinkedIn / WhatsApp) open in a
+    // new tab and leave THIS document focused — without restoring, `hidden`
+    // lands on the focused element and focus resets to <body>, stranding
+    // keyboard users at the top of the page (WCAG 2.4.3).
+    const isInPage = link.getAttribute('href').startsWith('#');
+    closeMenu({ restoreFocus: !isInPage });
   });
 
   document.addEventListener('keydown', (e) => {

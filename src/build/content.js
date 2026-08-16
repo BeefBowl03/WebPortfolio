@@ -411,13 +411,19 @@ function renderFilters(filters, total, catCounts) {
   return buttons.join('\n              ');
 }
 
-function renderGrid(items, resolveImage, offset, catLabel) {
+function renderGrid(items, resolveImage, offset, catLabel, labels = {}) {
   return items
     .map((p, i) => {
       const img = resolveImage(p.image, p.title);
       const { primary, source } = pickLinks(p);
-      const primaryIsCode = !primary || primary.type === 'code';
-      const barLabel = primaryIsCode ? 'View code' : 'View live';
+      /* Label comes from projects.linkLabels, not a hardcoded string, so the
+       * grid bar and the featured rows can't disagree about the same link.
+       * Note this is only rendered when `primary` exists — a project with no
+       * link previously fell into the code branch and advertised a
+       * "VIEW CODE ↗" affordance pointing at nothing. */
+      const barLabel = primary
+        ? labels[primary.type] || primary.label || 'View live'
+        : null;
       return `<li class="card-cell" data-cat="${attr(p.category)}">
               <article class="card" data-reveal>
                 <div class="card__media">
@@ -451,7 +457,7 @@ function renderGrid(items, resolveImage, offset, catLabel) {
                       )}" target="_blank" rel="noopener noreferrer">${esc(source.label)}${ARROW}${NEWTAB}</a>`
                     : ''
                 }
-                <p class="card__bar" aria-hidden="true">${esc(upper(barLabel))} ↗</p>
+                ${barLabel ? `<p class="card__bar" aria-hidden="true">${esc(upper(barLabel))} ↗</p>` : ''}
               </article>
             </li>`;
     })
@@ -836,7 +842,7 @@ export function buildTokens() {
     'projects.counter': esc(`${total} / ${total} SHIPPED`),
     'projects.featured': renderFeatured(featured, resolveImage, projects.linkLabels),
     'projects.filters': renderFilters(projects.filters, grid.length, catCounts),
-    'projects.grid': renderGrid(grid, resolveImage, featured.length, catLabel),
+    'projects.grid': renderGrid(grid, resolveImage, featured.length, catLabel, projects.linkLabels),
     'projects.gridCount': String(grid.length),
     'projects.githubLabel': esc(`All ${total} on GitHub`),
     'projects.githubUrl': attr(githubUrl),

@@ -50,16 +50,23 @@ function copyTemplate() {
  * written by hand). Silently no-ops if the asset is not found.
  */
 function preloadDisplayFont() {
+  /* Read the RESOLVED base rather than hardcoding "/WebPortfolio/". If base
+   * ever changes — a custom domain ("/"), or `vite build --base=/preview/` —
+   * a hardcoded prefix makes this the single URL on the page that 404s. */
+  let base = '/';
   return {
     name: 'portfolio-preload-font',
     enforce: 'post',
     apply: 'build',
+    configResolved(config) {
+      base = config.base || '/';
+    },
     transformIndexHtml(html, ctx) {
       const file = Object.keys(ctx?.bundle || {}).find((f) =>
         /archivo-latin-wdth-normal.*\.woff2$/.test(f)
       );
       if (!file) return html;
-      const href = `/WebPortfolio/${file}`;
+      const href = `${base}${file}`;
       return html.replace(
         '</head>',
         `  <link rel="preload" as="font" type="font/woff2" crossorigin href="${href}">\n  </head>`

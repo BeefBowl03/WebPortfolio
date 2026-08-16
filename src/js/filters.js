@@ -55,7 +55,7 @@ export function initFilters() {
     cell.classList.add('is-hiding');
     const done = (e) => {
       if (e.target !== cell) return;
-      cell.removeEventListener('transitionend', e.type === 'transitionend' ? done : done);
+      // No removeEventListener needed — registered with { once: true }.
       if (cell.classList.contains('is-hiding')) cell.classList.add('is-hidden');
     };
     cell.addEventListener('transitionend', done, { once: true });

@@ -135,7 +135,12 @@ export function initForm() {
           heading.focus();
         }
       } else {
+        /* No success template: the form stays on screen, so it MUST be taken
+         * out of the busy state or it is stranded on "Sending…" / aria-busy
+         * forever and can never be submitted again. (The template branch above
+         * removes the form entirely, so it needs no reset.) */
         form.reset();
+        setBusy(false);
       }
     } catch (err) {
       console.error('[form]', err);
