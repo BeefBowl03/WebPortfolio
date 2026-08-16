@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  One page, one URL.
+
+  The site is a single document with in-page anchors (#projects, #about,
+  #skills, #contact). Fragments are NOT separate URLs: a sitemap entry for
+  ".../#projects" is either ignored or folded back into the canonical, so
+  listing them would inflate the file without adding a single indexable page.
+
+  `changefreq` and `priority` are omitted deliberately — Google has stated it
+  ignores both. `lastmod` is the only hint here that is actually consumed, and
+  it must be updated when the page content materially changes or it becomes a
+  signal Google learns to distrust.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://beefbowl03.github.io/WebPortfolio/</loc>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+</urlset>

@@ -1,0 +1,175 @@
+[
+ {
+  "title": "Building Controls & Solutions",
+  "desc": "HVAC and building automation distributor with national footprint, offering expert solutions across 11 US locations with 300+ suppliers and 1 million+ parts. Professional e-commerce website serving contractors and facility managers.",
+  "image": "building-controls.jpg",
+  "tags": [
+   "Shopify",
+   "Tailwind CSS",
+   "API Integration",
+   "SEO",
+   "E-commerce"
+  ],
+  "links": [
+   "https://www.building-controls.com/"
+  ]
+ },
+ {
+  "title": "GEM (Green Energy Management)",
+  "desc": "Renewable energy solutions company specializing in port decarbonization, shore-to-ship power, and maritime waste-to-energy systems. Professional corporate website featuring clean energy infrastructure projects across the Caribbean and United States.",
+  "image": "gem.jpg",
+  "tags": [
+   "WordPress",
+   "PHP",
+   "CSS3",
+   "SEO"
+  ],
+  "links": [
+   "https://gem.ag/"
+  ]
+ },
+ {
+  "title": "Solitude Labs",
+  "desc": "Cybersecurity company building zero-trust, decentralized solutions for critical infrastructure and grid security. Modern website showcasing innovative technology for securing distributed energy resources and industrial systems at the edge.",
+  "image": "solitudelabs.jpg",
+  "tags": [
+   "WordPress",
+   "PHP",
+   "CSS3",
+   "SEO"
+  ],
+  "links": [
+   "https://solitudelabs.com/"
+  ]
+ },
+ {
+  "title": "AI Dashboard App",
+  "desc": "AI-powered business tools dashboard featuring dealer applications, email generators, logo creation, and domain generation with modern dark UI.",
+  "image": "dashboard app.PNG",
+  "tags": [
+   "React",
+   "AI Integration",
+   "Vercel",
+   "TailwindCSS"
+  ],
+  "links": [
+   "https://github.com/BeefBowl03/dashboard-highticket/tree/domain-generator-integration",
+   "https://dashboard-highticket.vercel.app/"
+  ]
+ },
+ {
+  "title": "Domain Generator",
+  "desc": "AI-powered domain name generator for high-ticket dropshipping stores with competitor analysis and pattern recognition.",
+  "image": "domain.PNG",
+  "tags": [
+   "React",
+   "AI/ML",
+   "Vercel",
+   "API Integration"
+  ],
+  "links": [
+   "https://github.com/BeefBowl03/domain-generator",
+   "https://domain-generator-kappa.vercel.app/"
+  ]
+ },
+ {
+  "title": "Legal Policy Generator",
+  "desc": "Modern React app with multi-step form wizard for generating professional legal policies including shipping, payment, and terms of service.",
+  "image": "legal.PNG",
+  "tags": [
+   "React",
+   "TypeScript",
+   "Vite",
+   "TailwindCSS"
+  ],
+  "links": [
+   "https://github.com/BeefBowl03/Legal-Policy-Generator",
+   "https://legalpolicygenerator.vercel.app/"
+  ]
+ },
+ {
+  "title": "TinEli Wedding Website",
+  "desc": "Beautiful, responsive wedding website with real-time countdown timer, elegant design, and modern typography featuring custom fonts and mobile-friendly layout.",
+  "image": "wedding.PNG",
+  "tags": [
+   "React",
+   "TypeScript",
+   "CSS3",
+   "Google Fonts"
+  ],
+  "links": [
+   "https://github.com/BeefBowl03/TinEli",
+   "https://tin-eli.vercel.app/"
+  ]
+ },
+ {
+  "title": "Perfectly Sustainable",
+  "desc": "WordPress website dedicated to sustainable living, eco-friendly products, sustainable farming, and renewable energy solutions with modern design and user-friendly navigation.",
+  "image": "ps.PNG",
+  "tags": [
+   "WordPress",
+   "PHP",
+   "CSS3",
+   "SEO"
+  ],
+  "links": [
+   "https://perfectlysustainable.com/"
+  ]
+ },
+ {
+  "title": "Light + Glo Designs",
+  "desc": "Australian luxury fragrance e-commerce website featuring handcrafted soy candles, diffusers, and perfumes. Award-winning brand with Shark Tank success and indigenous art collaborations.",
+  "image": "lightglo.PNG",
+  "tags": [
+   "E-commerce",
+   "Shopify",
+   "Liquid",
+   "SEO"
+  ],
+  "links": [
+   "https://www.lightandglodesigns.com.au/"
+  ]
+ },
+ {
+  "title": "Linguista Academy",
+  "desc": "Professional online course platform featuring \"De Selectie Strategie\" masterclass for course creation. Educational website with structured learning modules, community access, and 1-on-1 feedback sessions.",
+  "image": "linguista.PNG",
+  "tags": [
+   "WordPress",
+   "E-learning",
+   "PHP",
+   "CSS3"
+  ],
+  "links": [
+   "https://www.linguista-academy.be/"
+  ]
+ },
+ {
+  "title": "Present Rentals Jax",
+  "desc": "Rideshare vehicle rental platform specializing in DoorDash-ready cars. WordPress website featuring flexible weekly rentals, maintenance included, and driver support for gig economy workers in Jacksonville.",
+  "image": "presentrentals.PNG",
+  "tags": [
+   "WordPress",
+   "PHP",
+   "CSS3",
+   "SEO"
+  ],
+  "links": [
+   "https://presentrentalsjax.com/"
+  ]
+ },
+ {
+  "title": "Basix Plastics",
+  "desc": "South African e-commerce platform specializing in affordable household essentials, plastic products, and homeware accessories. Shopify store with loyalty program, multiple categories, and two physical locations in Pietermaritzburg.",
+  "image": "basix.PNG",
+  "tags": [
+   "Shopify",
+   "E-commerce",
+   "Liquid",
+   "SEO"
+  ],
+  "links": [
+   "https://basixplastics.co.za/"
+  ]
+ }
+]

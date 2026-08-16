@@ -1,0 +1,27 @@
+{
+  "name": "webportfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Personal portfolio site - static, built with Vite + Tailwind CSS, deployed to GitHub Pages.",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run llms && vite build",
+    "preview": "vite preview",
+    "images": "node scripts/optimize-images.mjs",
+    "images:check": "node scripts/optimize-images.mjs --check",
+    "llms": "node scripts/generate-llms-txt.mjs",
+    "llms:check": "node scripts/generate-llms-txt.mjs --check"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^3.4.17",
+    "vite": "^8.2.1"
+  },
+  "dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0"
+  }
+}

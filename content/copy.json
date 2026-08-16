@@ -1,0 +1,698 @@
+{
+ "meta": {
+  "siteTitle": "Celso Aquino — Freelance Shopify & WordPress Developer",
+  "metaDescription": "Freelance Shopify and WordPress developer, four years in. 13 shipped storefronts, React internal tools, and e-commerce builds. Available for select projects.",
+  "ogTitle": "Celso Aquino — Freelance Shopify & WordPress Developer",
+  "ogDescription": "Thirteen shipped builds. Shopify, WordPress, React, TypeScript. Client work across four continents. See the work and get in touch.",
+  "author": "Celso Aquino",
+  "keywords": [
+   "web developer",
+   "freelance web developer",
+   "Shopify developer",
+   "WordPress developer",
+   "React developer",
+   "e-commerce development",
+   "Celso Aquino"
+  ],
+  "locale": "en",
+  "canonicalHint": "Set to the deployed domain at build time."
+ },
+ "brand": {
+  "wordmark": "Celso Aquino",
+  "wordmarkShort": "CELSO",
+  "monogram": "CA",
+  "role": "Web Developer",
+  "note": "Replaces the old 'DevPortfolio' placeholder. Use wordmark in the header and footer; monogram for favicon and tight mobile widths."
+ },
+ "nav": {
+  "links": [
+   {
+    "label": "Work",
+    "href": "#projects"
+   },
+   {
+    "label": "About",
+    "href": "#about"
+   },
+   {
+    "label": "Stack",
+    "href": "#skills"
+   },
+   {
+    "label": "Contact",
+    "href": "#contact"
+   }
+  ],
+  "ctaLabel": "Start a project",
+  "mobileMenuLabel": "Menu",
+  "mobileMenuCloseLabel": "Close"
+ },
+ "hero": {
+  "eyebrow": "Web developer — Philippines",
+  "headlineLines": [
+   "I build storefronts",
+   "and the tools",
+   "that run behind them."
+  ],
+  "headlinePlain": "I build storefronts and the tools that run behind them.",
+  "subheadline": "Shopify, WordPress, and React work for clients in the US, Australia, Belgium, and South Africa.",
+  "supportLine": "Four years of shipped client work — catalogs with a million parts in them, custom Liquid themes, and internal apps that replaced somebody's spreadsheet. Thirteen of those builds are below, most of them live right now.",
+  "primaryCta": {
+   "label": "See the work",
+   "href": "#projects"
+  },
+  "secondaryCta": {
+   "label": "Start a project",
+   "href": "#contact"
+  },
+  "stats": [
+   {
+    "value": "13",
+    "label": "Shipped builds"
+   },
+   {
+    "value": "4",
+    "label": "Countries"
+   },
+   {
+    "value": "4+",
+    "label": "Years building"
+   }
+  ],
+  "scrollHint": "Scroll"
+ },
+ "about": {
+  "heading": "About",
+  "kicker": "Who you're hiring",
+  "paragraphs": [
+   "I'm Celso. I've spent the last four years building and maintaining e-commerce sites and internal tools for businesses that actually depend on them — a US event-linens retailer mid-way through a full theme migration, an HVAC parts distributor moving a million SKUs, an Australian fragrance brand, a South African homeware chain, a Dutch-language course platform.",
+   "Most of my work sits in two buckets. Storefronts: Shopify themes in Liquid, WordPress builds in PHP, catalog structure, search, and the checkout details that decide whether a cart converts. And internal tools: React and TypeScript apps that take a repetitive manual process and turn it into a form, a queue, and a database row.",
+   "I work directly with the person who owns the problem. No account manager in the middle. I'd rather ask three blunt questions up front than guess at a spec and rebuild it twice."
+  ],
+  "positioningPoints": [
+   {
+    "label": "Available for select projects",
+    "icon": "briefcase"
+   },
+   {
+    "label": "Client work shipped in the US, Australia, Belgium, and South Africa",
+    "icon": "globe"
+   },
+   {
+    "label": "E-commerce specialist — Shopify Liquid and WordPress",
+    "icon": "shopping-cart"
+   },
+   {
+    "label": "Internal tools and dashboards in React and TypeScript",
+    "icon": "code"
+   },
+   {
+    "label": "ADA/WCAG accessibility remediation on live storefronts",
+    "icon": "award"
+   },
+   {
+    "label": "Comfortable taking a build from design through to deploy",
+    "icon": "check-circle"
+   }
+  ],
+  "imageAlt": "Celso Aquino, freelance web developer"
+ },
+ "skills": {
+  "heading": "Stack",
+  "kicker": "What I build with",
+  "intro": "The tools I use often enough to be fast with them.",
+  "groups": [
+   {
+    "id": "frontend",
+    "title": "Front end",
+    "icon": "code",
+    "blurb": "The part people actually touch.",
+    "items": [
+     "HTML",
+     "CSS",
+     "JavaScript",
+     "TypeScript",
+     "React",
+     "Tailwind CSS",
+     "Vite"
+    ]
+   },
+   {
+    "id": "ecommerce-cms",
+    "title": "E-commerce & CMS",
+    "icon": "shopping-bag",
+    "blurb": "Storefronts, themes, and content models.",
+    "items": [
+     "Shopify",
+     "Shopify Liquid",
+     "WordPress",
+     "PHP",
+     "GoHighLevel",
+     "SEO"
+    ]
+   },
+   {
+    "id": "backend-data",
+    "title": "Data & back end",
+    "icon": "database",
+    "blurb": "Where the records live.",
+    "items": [
+     "Supabase",
+     "Firebase",
+     "Xano",
+     "SQLite",
+     "REST APIs",
+     "AI/LLM integration"
+    ]
+   },
+   {
+    "id": "build-ship",
+    "title": "Build & ship",
+    "icon": "upload-cloud",
+    "blurb": "Getting it live and keeping it there.",
+    "items": [
+     "Vercel",
+     "Git & GitHub",
+     "FlutterFlow",
+     "Responsive & accessible builds",
+     "Agile delivery"
+    ]
+   }
+  ]
+ },
+ "projects": {
+  "heading": "Selected work",
+  "kicker": "Thirteen builds",
+  "intro": "Client sites and tools I've built, rebuilt, and maintained. Links go straight to the live version.",
+  "filters": {
+   "allLabel": "All",
+   "categories": [
+    {
+     "id": "ecommerce",
+     "label": "E-commerce"
+    },
+    {
+     "id": "apps",
+     "label": "Apps & Tools"
+    },
+    {
+     "id": "websites",
+     "label": "Websites"
+    }
+   ]
+  },
+  "linkLabels": {
+   "live": "Live site",
+   "demo": "Live demo",
+   "code": "Source"
+  },
+  "items": [
+   {
+    "id": "building-controls",
+    "slug": "building-controls-and-solutions",
+    "title": "Building Controls & Solutions",
+    "category": "ecommerce",
+    "featured": true,
+    "hook": "A million-part HVAC catalog that contractors can actually search",
+    "description": "Worked on the Shopify storefront for a national HVAC and building-automation distributor carrying 300+ suppliers and 1 million+ parts across 15 US locations. The hard part is navigation and search at that scale: I built out browsable product categories with type filtering, stock and pricing states, and account-based pricing so trade buyers see their tier. Layout is Tailwind on top of Liquid, with API integrations feeding inventory and location data.",
+    "role": "Storefront development, catalog templates, integrations",
+    "tags": [
+     "Shopify",
+     "Liquid",
+     "Tailwind CSS",
+     "API Integration",
+     "SEO"
+    ],
+    "image": "building-controls.jpg",
+    "imageAlt": "Building Controls & Solutions HVAC parts Shopify storefront",
+    "links": [
+     {
+      "type": "live",
+      "label": "Live site",
+      "url": "https://www.building-controls.com/"
+     }
+    ]
+   },
+   {
+    "id": "cv-linens",
+    "slug": "cv-linens",
+    "title": "CV Linens",
+    "category": "ecommerce",
+    "featured": true,
+    "hook": "Store features built to survive a full theme migration",
+    "description": "This store is moving off the legacy Dawn theme onto a new Dwell/Horizon theme, and the usual cost of that is rebuilding every custom feature by hand. I build the features as Shopify app theme extensions instead — app blocks and app embeds that carry their own logic, UI, CSS, and JS — so they're theme-independent and come through the migration without rework. The working standard is blunt: a feature that lands automatically in the new theme is ideal, one or two migration steps is acceptable, anything needing repeated manual work per feature gets rejected. Modular sections and snippets are the fallback, direct theme edits the last resort, and CSS stays scoped per feature rather than global. Also handling ADA/WCAG accessibility remediation across the store.",
+    "role": "Shopify app extension development, theme migration engineering, accessibility remediation",
+    "tags": [
+     "Shopify",
+     "Liquid",
+     "App Theme Extensions",
+     "JavaScript",
+     "CSS",
+     "WCAG / ADA"
+    ],
+    "image": "cvlinens.png",
+    "imageAlt": "CV Linens event linens Shopify store",
+    "links": [
+     {
+      "type": "live",
+      "label": "Live site",
+      "url": "https://www.cvlinens.com/"
+     }
+    ]
+   },
+   {
+    "id": "gem",
+    "slug": "green-energy-management",
+    "title": "GEM (Green Energy Management)",
+    "category": "websites",
+    "featured": false,
+    "hook": "Corporate WordPress build for a port energy firm",
+    "description": "Built the corporate site for a renewable energy company working on Caribbean port infrastructure. Dense technical service lines — shore-to-ship power, waste-to-energy, grid integration — had to become service cards and detail pages a port authority can skim, plus a project gallery template where each entry carries its own capacity spec. Custom WordPress theme work in PHP, with consultation CTAs routed through the site and an on-page SEO pass across every service page.",
+    "role": "Custom WordPress theme, template build, SEO",
+    "tags": [
+     "WordPress",
+     "PHP",
+     "CSS3",
+     "SEO"
+    ],
+    "image": "gem.jpg",
+    "imageAlt": "GEM Green Energy Management renewable energy WordPress site",
+    "links": [
+     {
+      "type": "live",
+      "label": "Live site",
+      "url": "https://gem.ag/"
+     }
+    ]
+   },
+   {
+    "id": "solitude-labs",
+    "slug": "solitude-labs",
+    "title": "Solitude Labs",
+    "category": "websites",
+    "featured": false,
+    "hook": "Zero-trust security, made legible to non-engineers",
+    "description": "Site build for a cybersecurity company working on zero-trust and decentralized protection for grid and industrial systems. The brief was to explain edge security to procurement people without dumbing it down for the engineers also reading it, so the pages are layered: plain-language positioning up top, technical depth one click below. Custom WordPress theme in PHP with hand-written CSS and structured metadata across the stack.",
+    "role": "Custom WordPress theme, page build, SEO",
+    "tags": [
+     "WordPress",
+     "PHP",
+     "CSS3",
+     "SEO"
+    ],
+    "image": "solitudelabs.jpg",
+    "imageAlt": "Solitude Labs cybersecurity WordPress site",
+    "links": [
+     {
+      "type": "live",
+      "label": "Live site",
+      "url": "https://solitudelabs.com/"
+     }
+    ]
+   },
+   {
+    "id": "ai-dashboard",
+    "slug": "ai-dashboard-app",
+    "title": "AI Dashboard App",
+    "category": "apps",
+    "featured": false,
+    "hook": "Four internal AI tools behind one dashboard",
+    "description": "A React dashboard that pulls a set of scattered one-off AI tools into a single interface — dealer applications, email generation, logo creation, and domain generation. I built the shared shell, routing, and state so each tool plugs in as a module instead of living as its own app, then implemented the AI calls and merged the domain generator in on its own branch. Dark UI, Tailwind, deployed on Vercel.",
+    "role": "Front-end development, AI integration, deployment",
+    "tags": [
+     "React",
+     "TypeScript",
+     "Tailwind CSS",
+     "AI Integration",
+     "Vercel"
+    ],
+    "image": "dashboard app.PNG",
+    "imageAlt": "AI Dashboard App, a React interface for four internal AI tools",
+    "links": [
+     {
+      "type": "code",
+      "label": "Source",
+      "url": "https://github.com/BeefBowl03/dashboard-highticket/tree/domain-generator-integration"
+     },
+     {
+      "type": "demo",
+      "label": "Live demo",
+      "url": "https://dashboard-highticket.vercel.app/"
+     }
+    ]
+   },
+   {
+    "id": "domain-generator",
+    "slug": "domain-generator",
+    "title": "Domain Generator",
+    "category": "apps",
+    "featured": false,
+    "hook": "Turns competitor naming patterns into buyable domains",
+    "description": "Naming a high-ticket dropshipping store usually means an afternoon of guessing at a registrar. I built a React tool that reads competitor names in a niche, pulls out the naming patterns they share, and generates candidate domains from those patterns instead of from a thesaurus. API integrations handle the generation and lookup; the whole thing runs serverless on Vercel.",
+    "role": "Solo build — front end, API layer, deployment",
+    "tags": [
+     "React",
+     "API Integration",
+     "AI/ML",
+     "Vercel"
+    ],
+    "image": "domain.PNG",
+    "imageAlt": "Domain Generator, a React tool for generating store domain names",
+    "links": [
+     {
+      "type": "code",
+      "label": "Source",
+      "url": "https://github.com/BeefBowl03/domain-generator"
+     },
+     {
+      "type": "demo",
+      "label": "Live demo",
+      "url": "https://domain-generator-kappa.vercel.app/"
+     }
+    ]
+   },
+   {
+    "id": "legal-policy-generator",
+    "slug": "legal-policy-generator",
+    "title": "Legal Policy Generator",
+    "category": "apps",
+    "featured": false,
+    "hook": "Store policies in a wizard instead of a copy-paste job",
+    "description": "New store owners paste their policy pages from whatever they can find and end up with the wrong company name in the terms of service. This is a multi-step form wizard that walks a merchant through shipping, payment, returns, and terms, then assembles clean policy documents from their answers. Built in React and TypeScript on Vite, with per-step validation and state that survives navigating backwards.",
+    "role": "Solo build — form architecture, document generation, UI",
+    "tags": [
+     "React",
+     "TypeScript",
+     "Vite",
+     "Tailwind CSS"
+    ],
+    "image": "legal.PNG",
+    "imageAlt": "Legal Policy Generator, a React wizard for store policy pages",
+    "links": [
+     {
+      "type": "code",
+      "label": "Source",
+      "url": "https://github.com/BeefBowl03/Legal-Policy-Generator"
+     },
+     {
+      "type": "demo",
+      "label": "Live demo",
+      "url": "https://legalpolicygenerator.vercel.app/"
+     }
+    ]
+   },
+   {
+    "id": "tineli",
+    "slug": "tineli-wedding",
+    "title": "TinEli Wedding Site",
+    "category": "websites",
+    "featured": false,
+    "hook": "One-page invite with a live countdown, built in React",
+    "description": "A single-page wedding site built to be opened on a phone, at a bus stop, once. I built it in React and TypeScript with a live countdown driven off the ceremony timestamp, a typographic layout using custom loaded fonts, and a responsive scheme that holds its proportions from a 360px phone up to a desktop. No CMS, no framework overhead — it loads and it stays loaded.",
+    "role": "Solo build — design and front end",
+    "tags": [
+     "React",
+     "TypeScript",
+     "CSS3",
+     "Responsive"
+    ],
+    "image": "wedding.PNG",
+    "imageAlt": "TinEli wedding site built in React with a live countdown",
+    "links": [
+     {
+      "type": "code",
+      "label": "Source",
+      "url": "https://github.com/BeefBowl03/TinEli"
+     },
+     {
+      "type": "demo",
+      "label": "Live demo",
+      "url": "https://tin-eli.vercel.app/"
+     }
+    ]
+   },
+   {
+    "id": "perfectly-sustainable",
+    "slug": "perfectly-sustainable",
+    "title": "Perfectly Sustainable",
+    "category": "websites",
+    "featured": false,
+    "hook": "Content site for sustainable living, structured to be found",
+    "description": "WordPress build for a publisher covering sustainable living, eco-friendly products, farming, and renewable energy. The problem was breadth: four unrelated topic areas competing for the same navigation. I implemented a category and taxonomy structure that keeps each topic browsable on its own, then built the templates and on-page SEO around it so articles rank against their own keywords instead of each other.",
+    "role": "WordPress build, taxonomy setup, SEO",
+    "tags": [
+     "WordPress",
+     "PHP",
+     "CSS3",
+     "SEO"
+    ],
+    "image": "ps.PNG",
+    "imageAlt": "Perfectly Sustainable, a WordPress content site on sustainable living",
+    "links": [
+     {
+      "type": "live",
+      "label": "Live site",
+      "url": "https://perfectlysustainable.com/"
+     }
+    ]
+   },
+   {
+    "id": "light-and-glo",
+    "slug": "light-and-glo-designs",
+    "title": "Light + Glo Designs",
+    "category": "ecommerce",
+    "featured": false,
+    "hook": "Shopify build for an Australian luxury fragrance brand",
+    "description": "Shopify Liquid work for a Melbourne fragrance house selling soy candles, diffusers, room sprays, and eau de parfum. Fragrance is bought by feel, so the merchandising lets people shop three ways at once — by collection, by aroma profile, and by mood — on top of a catalog with multiple vessel sizes per product. I implemented those collection templates along with the gift set and discovery set pages, the wholesale stockist path, and the on-page SEO.",
+    "role": "Shopify theme development, collection templates, SEO",
+    "tags": [
+     "Shopify",
+     "Liquid",
+     "E-commerce",
+     "SEO"
+    ],
+    "image": "lightglo.PNG",
+    "imageAlt": "Light + Glo Designs Shopify store for an Australian fragrance brand",
+    "links": [
+     {
+      "type": "live",
+      "label": "Live site",
+      "url": "https://www.lightandglodesigns.com.au/"
+     }
+    ]
+   },
+   {
+    "id": "linguista-academy",
+    "slug": "linguista-academy",
+    "title": "Linguista Academy",
+    "category": "websites",
+    "featured": false,
+    "hook": "Dutch-language course platform with paid enrolment",
+    "description": "Built the WordPress platform for a Belgian masterclass on course design, running entirely in Dutch. The site has to sell before it teaches, so I built a long-form landing page — problem framing, method story, deliverables breakdown, testimonials, an expandable FAQ — that runs into paid enrolment and time-limited course access. Behind it sits the module structure, community area, and 1-on-1 feedback booking.",
+    "role": "WordPress build, sales page, enrolment flow",
+    "tags": [
+     "WordPress",
+     "PHP",
+     "E-learning",
+     "CSS3"
+    ],
+    "image": "linguista.PNG",
+    "imageAlt": "Linguista Academy Dutch-language WordPress course platform",
+    "links": [
+     {
+      "type": "live",
+      "label": "Live site",
+      "url": "https://www.linguista-academy.be/"
+     }
+    ]
+   },
+   {
+    "id": "present-rentals",
+    "slug": "present-rentals-jax",
+    "title": "Present Rentals Jax",
+    "category": "websites",
+    "featured": false,
+    "hook": "Rental site built for gig drivers applying from a phone",
+    "description": "WordPress site for a Jacksonville company renting DoorDash-ready cars by the week to gig drivers. The audience applies on a phone between shifts, so the page is built around a short path to the application: three-step how-it-works, benefit cards, driver testimonials, then a mobile-first booking flow that hands off cleanly to the application form. Custom theme work in PHP with local SEO for the Jacksonville market.",
+    "role": "WordPress build, landing page development, local SEO",
+    "tags": [
+     "WordPress",
+     "PHP",
+     "CSS3",
+     "Local SEO"
+    ],
+    "image": "presentrentals.PNG",
+    "imageAlt": "Present Rentals Jax WordPress car rental site for gig drivers",
+    "links": [
+     {
+      "type": "live",
+      "label": "Live site",
+      "url": "https://presentrentalsjax.com/"
+     }
+    ]
+   },
+   {
+    "id": "basix-plastics",
+    "slug": "basix-plastics",
+    "title": "Basix Plastics",
+    "category": "ecommerce",
+    "featured": true,
+    "hook": "High-SKU homeware store with rewards and two branches",
+    "description": "Shopify build for a South African homeware retailer selling low-price, high-volume household goods across eight categories, from food storage to garden and personal care. With a basket that's often twenty cheap items, I built the catalog and collection templates for fast browsing and quick add-to-cart, and implemented the storefront side of the 3%-back rewards programme and the free-delivery threshold. Store pages and hours for both Pietermaritzburg branches sit alongside the online catalog.",
+    "role": "Shopify theme development, catalog templates, rewards implementation",
+    "tags": [
+     "Shopify",
+     "Liquid",
+     "E-commerce",
+     "SEO"
+    ],
+    "image": "basix.PNG",
+    "imageAlt": "Basix Plastics Shopify store for a South African homeware retailer",
+    "links": [
+     {
+      "type": "live",
+      "label": "Live site",
+      "url": "https://basixplastics.co.za/"
+     }
+    ]
+   }
+  ]
+ },
+ "contact": {
+  "heading": "Let's build something",
+  "kicker": "Contact",
+  "invitation": "Tell me what you're building and where it's stuck. If it's a storefront, an internal tool, or a site that needs rebuilding properly, I'll tell you straight whether I'm the right person for it — usually within a day.",
+  "availability": "Available for select projects.",
+  "details": {
+   "heading": "Direct",
+   "items": [
+    {
+     "type": "email",
+     "label": "Email",
+     "value": "cvaquino03@outlook.com",
+     "href": "mailto:cvaquino03@outlook.com"
+    },
+    {
+     "type": "whatsapp",
+     "label": "WhatsApp",
+     "value": "+63 929 379 8597",
+     "href": "https://wa.me/639293798597"
+    },
+    {
+     "type": "location",
+     "label": "Based in",
+     "value": "Philippines",
+     "href": null
+    }
+   ]
+  },
+  "social": {
+   "heading": "Elsewhere",
+   "links": [
+    {
+     "platform": "github",
+     "label": "GitHub",
+     "url": "https://github.com/BeefBowl03"
+    },
+    {
+     "platform": "linkedin",
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/celso-aquino-7aa7771a5/"
+    },
+    {
+     "platform": "whatsapp",
+     "label": "WhatsApp",
+     "url": "https://wa.me/639293798597"
+    }
+   ]
+  },
+  "form": {
+   "heading": "Send a message",
+   "action": "https://formspree.io/f/mldpeyzb",
+   "method": "POST",
+   "fields": [
+    {
+     "name": "name",
+     "label": "Your name",
+     "placeholder": "Jane Dela Cruz",
+     "type": "text",
+     "required": true,
+     "errorMessage": "Please enter your name."
+    },
+    {
+     "name": "email",
+     "label": "Email",
+     "placeholder": "jane@company.com",
+     "type": "email",
+     "required": true,
+     "errorMessage": "Please enter a valid email address."
+    },
+    {
+     "name": "subject",
+     "label": "What's this about",
+     "placeholder": "Shopify rebuild, internal dashboard, something else",
+     "type": "text",
+     "required": true,
+     "errorMessage": "Give it a subject so I know where to start."
+    },
+    {
+     "name": "message",
+     "label": "Details",
+     "placeholder": "What you're building, what's broken, and when you need it done.",
+     "type": "textarea",
+     "rows": 5,
+     "required": true,
+     "errorMessage": "Add a few lines about the project."
+    }
+   ],
+   "submitLabel": "Send message",
+   "submitLoadingLabel": "Sending…",
+   "successMessage": "Got it. I'll reply within one business day.",
+   "errorMessage": "That didn't send. Message me on WhatsApp at +63 929 379 8597 and I'll pick it up there.",
+   "privacyNote": "Goes straight to my inbox. No list, no follow-up sequence."
+  }
+ },
+ "footer": {
+  "wordmark": "Celso Aquino",
+  "tagline": "Storefronts and internal tools, built to hold up.",
+  "secondaryLine": "Web developer — Philippines. Working with clients in the US, Australia, Belgium, and South Africa.",
+  "backToTopLabel": "Back to top",
+  "navLinks": [
+   {
+    "label": "Work",
+    "href": "#projects"
+   },
+   {
+    "label": "About",
+    "href": "#about"
+   },
+   {
+    "label": "Stack",
+    "href": "#skills"
+   },
+   {
+    "label": "Contact",
+    "href": "#contact"
+   }
+  ],
+  "social": [
+   {
+    "platform": "github",
+    "label": "GitHub",
+    "url": "https://github.com/BeefBowl03"
+   },
+   {
+    "platform": "linkedin",
+    "label": "LinkedIn",
+    "url": "https://www.linkedin.com/in/celso-aquino-7aa7771a5/"
+   },
+   {
+    "platform": "whatsapp",
+    "label": "WhatsApp",
+    "url": "https://wa.me/639293798597"
+   }
+  ],
+  "copyright": "© 2026 Celso Aquino. Built and maintained by me.",
+  "copyrightYear": 2026
+ }
+}

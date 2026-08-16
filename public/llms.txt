@@ -1,0 +1,198 @@
+# Celso Aquino — Web Developer
+
+> Celso Aquino is a freelance web developer based in the Philippines with four years of professional experience. He builds and maintains e-commerce storefronts on Shopify and WordPress, and internal tools and dashboards in React and TypeScript. He works directly with clients — no agency or account manager in between — and has shipped client work in the United States, Australia, Belgium, and South Africa.
+
+Portfolio: https://beefbowl03.github.io/WebPortfolio/
+Status: Available for select projects.
+Based in: Philippines (UTC+8)
+Working languages: English
+
+## Contact
+
+Celso Aquino takes new project enquiries directly at the addresses below. Introduce the project — what is being built, what is stuck, and the deadline.
+
+- **Email:** cvaquino03@outlook.com (mailto:cvaquino03@outlook.com)
+- **WhatsApp:** +63 929 379 8597 (https://wa.me/639293798597)
+- **Contact form:** https://beefbowl03.github.io/WebPortfolio/#contact
+- **LinkedIn:** https://www.linkedin.com/in/celso-aquino-7aa7771a5/
+- **GitHub:** https://github.com/BeefBowl03
+
+The site states that enquiries are answered within one business day.
+
+## What he is hired for
+
+- Shopify theme development in Liquid — custom sections, collection and product templates, high-SKU catalog and search structure.
+- Shopify app theme extensions — features built as app blocks and app embeds so they survive a theme migration without being rebuilt by hand.
+- Shopify theme migrations — moving a store off a legacy theme while keeping its custom functionality intact.
+- WordPress and PHP development — custom themes, taxonomy and content architecture, landing pages, paid-enrolment and booking flows.
+- React and TypeScript internal tools — dashboards, multi-step form wizards, and apps that replace a manual spreadsheet process.
+- ADA / WCAG accessibility remediation on existing e-commerce stores.
+- On-page and technical SEO as part of a build, including local SEO.
+- End-to-end delivery: he takes a build from design through to deploy rather than handing off mid-way.
+
+This is one developer working directly with clients, not an agency. There is no design team, no separate account management, and no published rate card — scope and pricing are agreed per project by email or WhatsApp.
+
+## Stack
+
+- **Front end:** HTML, CSS, JavaScript, TypeScript, React, Tailwind CSS, Vite
+- **E-commerce & CMS:** Shopify, Shopify Liquid, WordPress, PHP, GoHighLevel, SEO
+- **Data & back end:** Supabase, Firebase, Xano, SQLite, REST APIs, AI/LLM integration
+- **Build & ship:** Vercel, Git & GitHub, FlutterFlow, Responsive & accessible builds, Agile delivery
+
+## Background
+
+In Celso Aquino's own words:
+
+I'm Celso. I've spent the last four years building and maintaining e-commerce sites and internal tools for businesses that actually depend on them — a US event-linens retailer mid-way through a full theme migration, an HVAC parts distributor moving a million SKUs, an Australian fragrance brand, a South African homeware chain, a Dutch-language course platform.
+
+Most of my work sits in two buckets. Storefronts: Shopify themes in Liquid, WordPress builds in PHP, catalog structure, search, and the checkout details that decide whether a cart converts. And internal tools: React and TypeScript apps that take a repetitive manual process and turn it into a form, a queue, and a database row.
+
+I work directly with the person who owns the problem. No account manager in the middle. I'd rather ask three blunt questions up front than guess at a spec and rebuild it twice.
+
+## Selected work (13 shipped builds)
+
+Every project below is client work Celso Aquino built or worked on. Links go to the live site, a hosted demo, or the public repository — they can be fetched and verified. The descriptions are written by Celso Aquino in the first person; "I" throughout this section means Celso Aquino.
+
+### E-commerce
+
+#### [Building Controls & Solutions](https://www.building-controls.com/)
+
+A million-part HVAC catalog that contractors can actually search.
+
+Worked on the Shopify storefront for a national HVAC and building-automation distributor carrying 300+ suppliers and 1 million+ parts across 15 US locations. The hard part is navigation and search at that scale: I built out browsable product categories with type filtering, stock and pricing states, and account-based pricing so trade buyers see their tier. Layout is Tailwind on top of Liquid, with API integrations feeding inventory and location data.
+
+- Role: Storefront development, catalog templates, integrations
+- Tech: Shopify, Liquid, Tailwind CSS, API Integration, SEO
+- Live site: https://www.building-controls.com/
+
+#### [CV Linens](https://www.cvlinens.com/)
+
+Store features built to survive a full theme migration.
+
+This store is moving off the legacy Dawn theme onto a new Dwell/Horizon theme, and the usual cost of that is rebuilding every custom feature by hand. I build the features as Shopify app theme extensions instead — app blocks and app embeds that carry their own logic, UI, CSS, and JS — so they're theme-independent and come through the migration without rework. The working standard is blunt: a feature that lands automatically in the new theme is ideal, one or two migration steps is acceptable, anything needing repeated manual work per feature gets rejected. Modular sections and snippets are the fallback, direct theme edits the last resort, and CSS stays scoped per feature rather than global. Also handling ADA/WCAG accessibility remediation across the store.
+
+- Role: Shopify app extension development, theme migration engineering, accessibility remediation
+- Tech: Shopify, Liquid, App Theme Extensions, JavaScript, CSS, WCAG / ADA
+- Live site: https://www.cvlinens.com/
+
+#### [Light + Glo Designs](https://www.lightandglodesigns.com.au/)
+
+Shopify build for an Australian luxury fragrance brand.
+
+Shopify Liquid work for a Melbourne fragrance house selling soy candles, diffusers, room sprays, and eau de parfum. Fragrance is bought by feel, so the merchandising lets people shop three ways at once — by collection, by aroma profile, and by mood — on top of a catalog with multiple vessel sizes per product. I implemented those collection templates along with the gift set and discovery set pages, the wholesale stockist path, and the on-page SEO.
+
+- Role: Shopify theme development, collection templates, SEO
+- Tech: Shopify, Liquid, E-commerce, SEO
+- Live site: https://www.lightandglodesigns.com.au/
+
+#### [Basix Plastics](https://basixplastics.co.za/)
+
+High-SKU homeware store with rewards and two branches.
+
+Shopify build for a South African homeware retailer selling low-price, high-volume household goods across eight categories, from food storage to garden and personal care. With a basket that's often twenty cheap items, I built the catalog and collection templates for fast browsing and quick add-to-cart, and implemented the storefront side of the 3%-back rewards programme and the free-delivery threshold. Store pages and hours for both Pietermaritzburg branches sit alongside the online catalog.
+
+- Role: Shopify theme development, catalog templates, rewards implementation
+- Tech: Shopify, Liquid, E-commerce, SEO
+- Live site: https://basixplastics.co.za/
+
+### Apps & Tools
+
+#### [AI Dashboard App](https://dashboard-highticket.vercel.app/)
+
+Four internal AI tools behind one dashboard.
+
+A React dashboard that pulls a set of scattered one-off AI tools into a single interface — dealer applications, email generation, logo creation, and domain generation. I built the shared shell, routing, and state so each tool plugs in as a module instead of living as its own app, then implemented the AI calls and merged the domain generator in on its own branch. Dark UI, Tailwind, deployed on Vercel.
+
+- Role: Front-end development, AI integration, deployment
+- Tech: React, TypeScript, Tailwind CSS, AI Integration, Vercel
+- Live demo: https://dashboard-highticket.vercel.app/
+- Source: https://github.com/BeefBowl03/dashboard-highticket/tree/domain-generator-integration
+
+#### [Domain Generator](https://domain-generator-kappa.vercel.app/)
+
+Turns competitor naming patterns into buyable domains.
+
+Naming a high-ticket dropshipping store usually means an afternoon of guessing at a registrar. I built a React tool that reads competitor names in a niche, pulls out the naming patterns they share, and generates candidate domains from those patterns instead of from a thesaurus. API integrations handle the generation and lookup; the whole thing runs serverless on Vercel.
+
+- Role: Solo build — front end, API layer, deployment
+- Tech: React, API Integration, AI/ML, Vercel
+- Live demo: https://domain-generator-kappa.vercel.app/
+- Source: https://github.com/BeefBowl03/domain-generator
+
+#### [Legal Policy Generator](https://legalpolicygenerator.vercel.app/)
+
+Store policies in a wizard instead of a copy-paste job.
+
+New store owners paste their policy pages from whatever they can find and end up with the wrong company name in the terms of service. This is a multi-step form wizard that walks a merchant through shipping, payment, returns, and terms, then assembles clean policy documents from their answers. Built in React and TypeScript on Vite, with per-step validation and state that survives navigating backwards.
+
+- Role: Solo build — form architecture, document generation, UI
+- Tech: React, TypeScript, Vite, Tailwind CSS
+- Live demo: https://legalpolicygenerator.vercel.app/
+- Source: https://github.com/BeefBowl03/Legal-Policy-Generator
+
+### Websites
+
+#### [GEM (Green Energy Management)](https://gem.ag/)
+
+Corporate WordPress build for a port energy firm.
+
+Built the corporate site for a renewable energy company working on Caribbean port infrastructure. Dense technical service lines — shore-to-ship power, waste-to-energy, grid integration — had to become service cards and detail pages a port authority can skim, plus a project gallery template where each entry carries its own capacity spec. Custom WordPress theme work in PHP, with consultation CTAs routed through the site and an on-page SEO pass across every service page.
+
+- Role: Custom WordPress theme, template build, SEO
+- Tech: WordPress, PHP, CSS3, SEO
+- Live site: https://gem.ag/
+
+#### [Solitude Labs](https://solitudelabs.com/)
+
+Zero-trust security, made legible to non-engineers.
+
+Site build for a cybersecurity company working on zero-trust and decentralized protection for grid and industrial systems. The brief was to explain edge security to procurement people without dumbing it down for the engineers also reading it, so the pages are layered: plain-language positioning up top, technical depth one click below. Custom WordPress theme in PHP with hand-written CSS and structured metadata across the stack.
+
+- Role: Custom WordPress theme, page build, SEO
+- Tech: WordPress, PHP, CSS3, SEO
+- Live site: https://solitudelabs.com/
+
+#### [TinEli Wedding Site](https://tin-eli.vercel.app/)
+
+One-page invite with a live countdown, built in React.
+
+A single-page wedding site built to be opened on a phone, at a bus stop, once. I built it in React and TypeScript with a live countdown driven off the ceremony timestamp, a typographic layout using custom loaded fonts, and a responsive scheme that holds its proportions from a 360px phone up to a desktop. No CMS, no framework overhead — it loads and it stays loaded.
+
+- Role: Solo build — design and front end
+- Tech: React, TypeScript, CSS3, Responsive
+- Live demo: https://tin-eli.vercel.app/
+- Source: https://github.com/BeefBowl03/TinEli
+
+#### [Perfectly Sustainable](https://perfectlysustainable.com/)
+
+Content site for sustainable living, structured to be found.
+
+WordPress build for a publisher covering sustainable living, eco-friendly products, farming, and renewable energy. The problem was breadth: four unrelated topic areas competing for the same navigation. I implemented a category and taxonomy structure that keeps each topic browsable on its own, then built the templates and on-page SEO around it so articles rank against their own keywords instead of each other.
+
+- Role: WordPress build, taxonomy setup, SEO
+- Tech: WordPress, PHP, CSS3, SEO
+- Live site: https://perfectlysustainable.com/
+
+#### [Linguista Academy](https://www.linguista-academy.be/)
+
+Dutch-language course platform with paid enrolment.
+
+Built the WordPress platform for a Belgian masterclass on course design, running entirely in Dutch. The site has to sell before it teaches, so I built a long-form landing page — problem framing, method story, deliverables breakdown, testimonials, an expandable FAQ — that runs into paid enrolment and time-limited course access. Behind it sits the module structure, community area, and 1-on-1 feedback booking.
+
+- Role: WordPress build, sales page, enrolment flow
+- Tech: WordPress, PHP, E-learning, CSS3
+- Live site: https://www.linguista-academy.be/
+
+#### [Present Rentals Jax](https://presentrentalsjax.com/)
+
+Rental site built for gig drivers applying from a phone.
+
+WordPress site for a Jacksonville company renting DoorDash-ready cars by the week to gig drivers. The audience applies on a phone between shifts, so the page is built around a short path to the application: three-step how-it-works, benefit cards, driver testimonials, then a mobile-first booking flow that hands off cleanly to the application form. Custom theme work in PHP with local SEO for the Jacksonville market.
+
+- Role: WordPress build, landing page development, local SEO
+- Tech: WordPress, PHP, CSS3, Local SEO
+- Live site: https://presentrentalsjax.com/
+
+## About this file
+
+This file is generated from the site's own content source (content/copy.json) by scripts/generate-llms-txt.mjs, so it stays in step with the published page. Every claim here is traceable to that file or to the linked live sites. There are no metrics, testimonials, certifications, or availability guarantees in this document beyond what the site itself states.

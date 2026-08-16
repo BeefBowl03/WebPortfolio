@@ -1,0 +1,38 @@
+{
+  "$comment": "Maps the ORIGINAL repo-root image filenames to their new normalized locations under public/images/. Generated during the Vite/Tailwind migration. Use this to translate image references in content/copy.json (and the legacy index.html) onto the new names. 'referencePath' is what you write in HTML markup; Vite rewrites the leading slash to /WebPortfolio/ at build time.",
+  "assetDir": "public/images",
+  "publicUrlPrefix": "/images/",
+  "baseUrl": "/WebPortfolio/",
+  "renames": [
+    { "old": "basix.PNG", "new": "basix.png", "referencePath": "/images/basix.png", "changed": true },
+    { "old": "beefbowl-logo.svg", "new": "beefbowl-logo.svg", "referencePath": "/images/beefbowl-logo.svg", "changed": false },
+    { "old": "beefbowl.png", "new": "beefbowl.png", "referencePath": "/images/beefbowl.png", "changed": false },
+    { "old": "building-controls.jpg", "new": "building-controls.jpg", "referencePath": "/images/building-controls.jpg", "changed": false },
+    { "old": "chasing.jpeg", "new": "chasing.jpeg", "referencePath": "/images/chasing.jpeg", "changed": false },
+    { "old": "cv-removebg-preview.png", "new": "cv-removebg-preview.png", "referencePath": "/images/cv-removebg-preview.png", "changed": false },
+    { "old": "dashboard app.PNG", "new": "dashboard-app.png", "referencePath": "/images/dashboard-app.png", "changed": true },
+    { "old": "domain.PNG", "new": "domain.png", "referencePath": "/images/domain.png", "changed": true },
+    { "old": "gem.jpg", "new": "gem.jpg", "referencePath": "/images/gem.jpg", "changed": false },
+    { "old": "herobanner.png", "new": "herobanner.png", "referencePath": "/images/herobanner.png", "changed": false },
+    { "old": "legal.PNG", "new": "legal.png", "referencePath": "/images/legal.png", "changed": true },
+    { "old": "light-glo.jpeg", "new": "light-glo.jpeg", "referencePath": "/images/light-glo.jpeg", "changed": false },
+    { "old": "lightglo.PNG", "new": "lightglo.png", "referencePath": "/images/lightglo.png", "changed": true },
+    { "old": "linguista.PNG", "new": "linguista.png", "referencePath": "/images/linguista.png", "changed": true },
+    { "old": "linguista.jpeg", "new": "linguista.jpeg", "referencePath": "/images/linguista.jpeg", "changed": false },
+    { "old": "perfect.jpeg", "new": "perfect.jpeg", "referencePath": "/images/perfect.jpeg", "changed": false },
+    { "old": "photo.png", "new": "photo.png", "referencePath": "/images/photo.png", "changed": false },
+    { "old": "presententerprises.jpeg", "new": "presententerprises.jpeg", "referencePath": "/images/presententerprises.jpeg", "changed": false },
+    { "old": "presenthvac.jpeg", "new": "presenthvac.jpeg", "referencePath": "/images/presenthvac.jpeg", "changed": false },
+    { "old": "presentrentals.PNG", "new": "presentrentals.png", "referencePath": "/images/presentrentals.png", "changed": true },
+    { "old": "ps.PNG", "new": "ps.png", "referencePath": "/images/ps.png", "changed": true },
+    { "old": "rpg.jpeg", "new": "rpg.jpeg", "referencePath": "/images/rpg.jpeg", "changed": false },
+    { "old": "solitudelabs.jpg", "new": "solitudelabs.jpg", "referencePath": "/images/solitudelabs.jpg", "changed": false },
+    { "old": "wedding.PNG", "new": "wedding.png", "referencePath": "/images/wedding.png", "changed": true }
+  ],
+  "notes": [
+    "IMPORTANT: 'linguista.png' (was linguista.PNG) and 'linguista.jpeg' are two DIFFERENT images. Likewise 'lightglo.png' (was lightglo.PNG) and 'light-glo.jpeg'. Do not collapse them.",
+    "'dashboard app.PNG' was the only filename containing a space.",
+    "All uppercase .PNG extensions were lowercased. GitHub Pages serves from a case-sensitive filesystem, so uppercase extensions in markup will 404 even though they resolve on Windows locally.",
+    "Every file was relocated with `git mv`, so `git log --follow` still traces full history."
+  ]
+}
