@@ -1,0 +1,18 @@
+# https://beefbowl03.github.io/WebPortfolio/
+#
+# HEADS UP — this file is only advisory at this path.
+# robots.txt is only honoured at the HOST ROOT. Crawlers read
+#   https://beefbowl03.github.io/robots.txt
+# and completely ignore
+#   https://beefbowl03.github.io/WebPortfolio/robots.txt
+# The host root belongs to the GitHub user page, not to this repo. This file is
+# shipped anyway because it (a) costs nothing, (b) becomes authoritative the
+# moment a custom domain is attached, and (c) documents the intent.
+# See docs/seo.md for how to control crawling of this path for real.
+
+User-agent: *
+Allow: /
+
+# Sitemap is submitted directly in Search Console; this line is a no-op until
+# the file is served from the host root.
+Sitemap: https://beefbowl03.github.io/WebPortfolio/sitemap.xml
